@@ -1,4 +1,5 @@
-from django.db import models
+from django.db import models 
+
 
 class Income(models.Models):
     date =models.DateTimeField(auto_now_add=True)
@@ -17,4 +18,3 @@ class Income(models.Models):
     paymode = models.CharField(max_length=50)
     receiptnum = models.IntegerField(max_length=20)
     balduedate = models.DateTimeFlield
-    
