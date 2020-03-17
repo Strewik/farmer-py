@@ -33,7 +33,7 @@ const PaymentMode = t.enums({
 
 const User = t.struct({
   Date: t.Date,
-  Client: t.String,
+  Customer: t.String,
   Phone: t.Number,
   Product: t.String,
   Unit: t.String,
