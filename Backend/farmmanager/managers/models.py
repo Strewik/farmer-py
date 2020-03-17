@@ -1,7 +1,7 @@
 from django.db import models 
 
 
-class Income(models.Models):
+class Income(models.Model):
     date =models.DateTimeField(auto_now_add=True)
     customer = models.CharField(max_length=100)
     phone = models.IntegerField(max_length=10)
@@ -17,4 +17,4 @@ class Income(models.Models):
     amountpaid = models.IntegerField(max_length=20)
     paymode = models.CharField(max_length=50)
     receiptnum = models.IntegerField(max_length=20, blank=True)
-    balduedate = models.DateTimeFlield(blank=True)
+    balduedate = models.DateTimeField(blank=True)
